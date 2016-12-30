@@ -1,7 +1,7 @@
 language: scala
 branches:
   only:
-    - master
+  - master
 scala:
 - 2.11.8
 jdk:
@@ -9,4 +9,9 @@ jdk:
 notifications:
   email:
     recipients:
-      - youremail@gmail.com
+    - youremail@gmail.com
+deploy:
+  provider: heroku
+  app: blog-post-mmenestret
+  api_key:
+    secure: r3HlgEA5pNTWAS5Ko7gl+xov/jjI3JT05jEDhPEX6+Rb5QfSypPJZot6g3Bl9ZIxMqjuFLzynR6FfZaPTkqMiDifnhXTdQAeGodt87Wqts6JPtsLBkJS5/HHZNuoErl8V2QjHbDRnj2eFfRQAC/xQsE/RL/uacABeU+B4ylWh+RxQndP1J7jQiByroNlUZKXV4m2jnyvfhgZs/jCYJixUHLjsEPEqapGr6UZaNQniwPYXshLVw6IWq5hSYFNDznbh3GEbf7dYeA3r9WEGepHYlZZ14HWJk/Tl7GqjBJJgFXop3BSPMBmU6gXuCUVXeOHDIbmaAXuIlWIr7P0GihwrVIf43/1mYRYO4st+m9t9kUjzdp9d0x7AWhKS1L1WOxoHYTCozq3sH3u9zUP7Xx5Uf+5aNHSkCnMff08V8eqWKhQULpB7glp0QHCMld0m95ijAP1qSNMAOQnT0tU9O0Mj+tDekBREmN7igFXs1MpFjaIXdqNRSKyt9wwSvDwIrLlZT2IvtX7pgNLA/Cgu6fe5hVvFTCHgU2Qfq8WaPTULU1F8pkv/KJpb+UJPbTFijaXnrDBvkFlbtBWrbIKwSKwPdpSl7gyUbHX2X9vQixSdJNqZ9Ae8+GK6huET2E8lUztu0qLY42Uy+Wp37UpkYOXd/DzjdswWNUDlIlmUukvbq8=
