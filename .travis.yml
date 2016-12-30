@@ -1,0 +1,12 @@
+language: scala
+branches:
+  only:
+    - master
+scala:
+- 2.11.8
+jdk:
+- oraclejdk8
+notifications:
+  email:
+    recipients:
+      - youremail@gmail.com
