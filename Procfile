@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/akka-http-microservice -Dhttp.port=$PORT
+web: target/universal/stage/bin/blog-post -Dhttp.port=$PORT
