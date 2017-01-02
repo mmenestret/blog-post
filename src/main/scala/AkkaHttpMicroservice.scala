@@ -112,5 +112,8 @@ object AkkaHttpMicroservice extends App with Service {
   override val config = ConfigFactory.load()
   override val logger = Logging(system, getClass)
 
-  Http().bindAndHandle(routes, config.getString("http.interface"), sys.env.get("PORT").getOrElse("8080").toInt)
+  val interface = config.getString("http.interface")
+  val port = sys.env.getOrElse("PORT", config.getString("http.port")).toInt
+
+  Http().bindAndHandle(routes, interface, port)
 }
